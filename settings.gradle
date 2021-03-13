@@ -7,3 +7,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MvvmSample"
 include ':app'
+include ':common'
+include ':mine'
