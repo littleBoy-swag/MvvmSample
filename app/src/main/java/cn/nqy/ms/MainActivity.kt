@@ -10,11 +10,13 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import cn.nqy.annotation.NqyRouter
 import cn.nqy.ms.data.PhotoItem
 import cn.nqy.ms.utils.RecyclerViewScrollListener
 import cn.nqy.ms.viewmodel.PhotoViewModel
 import com.bumptech.glide.Glide
 
+@NqyRouter(path = "app/MainActivity")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var rvPhotos: RecyclerView

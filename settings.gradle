@@ -9,3 +9,5 @@ rootProject.name = "MvvmSample"
 include ':app'
 include ':common'
 include ':mine'
+include ':annotation'
+include ':annotation-processor'

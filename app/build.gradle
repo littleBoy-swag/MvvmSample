@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion rootProject.app_android.compileSdkVersion
 
     defaultConfig {
         applicationId "cn.nqy.ms"
-        minSdkVersion 23
-        targetSdkVersion 30
+        minSdkVersion rootProject.app_android.minSdkVersion
+        targetSdkVersion rootProject.app_android.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -54,6 +54,9 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     // recyclerview
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation project(':annotation')
+    annotationProcessor project(':annotation-processor')
 
 
 }

@@ -6,14 +6,14 @@ if (rootProject.isRelease) {
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion rootProject.app_android.compileSdkVersion
 
     defaultConfig {
         if (!rootProject.isRelease) {
             applicationId "cn.nqy.mine"
         }
-        minSdkVersion 23
-        targetSdkVersion 30
+        minSdkVersion rootProject.app_android.minSdkVersion
+        targetSdkVersion rootProject.app_android.targetSdkVersion
         versionCode 1
         versionName "1.0"
 

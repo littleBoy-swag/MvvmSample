@@ -1,4 +1,11 @@
 
 ext {
     isRelease = true
+
+    app_android = [
+            compileSdkVersion: 30,
+            minSdkVersion: 23,
+            targetSdkVersion: 30
+    ]
+
 }
